@@ -55,7 +55,9 @@ body{
         display: flex;
         margin-right: auto;
         margin-top: 1%;
+        border-radius: 50%; 
     }
+
 
     .profile-image{
         width: 100%;
