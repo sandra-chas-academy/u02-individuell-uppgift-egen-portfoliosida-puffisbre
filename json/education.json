@@ -1,0 +1,23 @@
+[
+    {
+        "education":"Sunderby Folkhögskola",
+        "orientation": "Indiespelsutveckling",
+        "type": "School",
+        "date": "September 2017 - Juli 2019",
+        "location": "Boden"
+    },
+    {
+        "education":"Changemaker Educations",
+        "orientation": "Webutvecklare med inrikning E-handel",
+        "type": "School",
+        "date": "September 2019 - Juli 2021",
+        "location": "Boden"
+    },
+    {
+        "education":"Chas Academy",
+        "orientation": "Fullstack utvecklare JavaScript",
+        "type": "School",
+        "date": "September 2024 - Juli 2026",
+        "location": "Stockholm"
+    }
+]

@@ -4,40 +4,23 @@ const homeImage = document.querySelector('.home-image');
 const aboutImage = document.querySelector('.about-image');
 const homeText = document.querySelector('.home-text');
 const aboutText = document.querySelector('.about-text');
+const welcomeContainer = document.querySelector('.welcome-container');
 
 
 burgerMenu.addEventListener('click', () =>{
     if (menuList.style.display === "none") {
         menuList.style.display = "flex";
+        if(welcomeContainer != null){
+          welcomeContainer.style.marginTop = '0%';
+        }
       } else {
         menuList.style.display = "none";
+        if(welcomeContainer != null){
+          welcomeContainer.style.marginTop = '30%';
+        }
       }
 });
 
-homeImage.addEventListener('click', () => {
-    if (homeText.style.display === "none") {
-        homeText.style.display = 'flex';
-        homeImage.style.filter = 'blur(10px)';
-        homeText.addEventListener('click', () =>{
-            location.reload();
-        })
-      } else {
-       homeText.style.display = "none";
-       homeImage.style.filter = 'none';
-      }
-});
 
-aboutImage.addEventListener('click', () => {
-    if (aboutText.style.display === "none") {
-        aboutText.style.display = 'flex';
-        aboutImage.style.filter = 'blur(10px)';
-        aboutText.addEventListener('click', () =>{
-            location.reload();
-        })
-      } else {
-       aboutText.style.display = "none";
-       aboutImage.style.filter = 'none';
-      }
-});
 
 
