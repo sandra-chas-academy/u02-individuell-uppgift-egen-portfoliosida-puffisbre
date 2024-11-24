@@ -16,7 +16,7 @@ burgerMenu.addEventListener('click', () =>{
       } else {
         menuList.style.display = "none";
         if(welcomeContainer != null){
-          welcomeContainer.style.marginTop = '30%';
+          welcomeContainer.style.marginTop = '20%';
         }
       }
 });
