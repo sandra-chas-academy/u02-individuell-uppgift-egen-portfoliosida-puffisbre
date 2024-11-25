@@ -8,8 +8,14 @@ const welcomeContainer = document.querySelector('.welcome-container');
 const profileImageContainer = document.querySelector('.profile-image-container');
 const profileImage = document.querySelector('.profile-image');
 const headerContainer = document.querySelector('.header-container');
+const lampBtn = document.querySelector('.lampButton');
+const turnedOff = document.querySelector('.turnedOff');
+const turnedOn = document.querySelector('.turnedOn');
+const rootVar = document.querySelector(':root');
 
 let treeClicked = false;
+let lampClicked = false;
+turnedOn.style.display = "none";
 
 profileImageContainer.addEventListener('click', () =>{
  if(treeClicked === false){
@@ -25,6 +31,24 @@ profileImageContainer.addEventListener('click', () =>{
   }, 100);
   profileImage.style.filter = 'invert(17%) sepia(28%) saturate(627%) hue-rotate(85deg) brightness(99%) contrast(89%)';
   treeClicked = false;
+ }
+})
+
+lampBtn.addEventListener('click', () => {
+ if(lampClicked === false){
+  turnedOn.style.display = "block";
+  turnedOff.style.display = "none";
+  rootVar.style.setProperty('--bg-color', 'black');
+  rootVar.style.setProperty('--header-bg-color', 'black');
+  rootVar.style.setProperty('--main-text-color', 'white');
+  lampClicked = true;
+ }else if(lampClicked === true){
+  turnedOn.style.display = "none";
+  turnedOff.style.display = "block";
+  rootVar.style.setProperty('--bg-color', 'white');
+  rootVar.style.setProperty('--header-bg-color', 'white');
+  rootVar.style.setProperty('--main-text-color', '#253d2c');
+  lampClicked = false;
  }
 })
 

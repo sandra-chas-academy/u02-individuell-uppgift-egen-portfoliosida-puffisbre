@@ -1,3 +1,5 @@
+@import url('./base.css');
+
 @media only screen and (max-width: 600px) {
 .about-text {
     display: none;
@@ -10,7 +12,7 @@
     transform: translate(-50%, -50%);
     width: 120px;
     height: 40px;
-    background-color: white;
+    background-color: var(--bg-color);
     border-radius: 30px;
   }
 .about-image{
@@ -55,7 +57,7 @@
     font-size: 3.5vw;
     width: 100%;
     margin-left: 1.5%;
-    color: #253d2c;
+    color: var(--main-text-color);
     gap: 2px;
 }
 
@@ -66,7 +68,7 @@
     font-size: 3.5vw;
     width: 100%;
     margin-right: 1.5%;
-    color: #253d2c;
+    color: var(--main-text-color);
     gap: 2px;
 }
 
@@ -127,7 +129,7 @@ background-color: #D7FFE0;
     font-size: 3.5vw;
     width: 100%;
     margin-left: 1.5%;
-    color: #253d2c;
+    color: var(--main-text-color);
     gap: 2px;
 }
 
@@ -138,7 +140,7 @@ background-color: #D7FFE0;
     font-size: 3.5vw;
     width: 100%;
     margin-right: 1.5%;
-    color: #253d2c;
+    color: var(--main-text-color);
     gap: 2px;
 }
 

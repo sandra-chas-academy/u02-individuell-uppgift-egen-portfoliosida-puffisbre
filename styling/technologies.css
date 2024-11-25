@@ -1,4 +1,4 @@
-
+@import url('./base.css');
 @media only screen and (max-width: 600px) {
 .tech-titles{
     text-align: center;
@@ -29,7 +29,7 @@
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--bg-color);
 }
 
 .code-circle{
@@ -37,7 +37,25 @@
     align-self: center;
     align-items: center;
     justify-content: center;
+    animation-name: code-cirle-animation;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
 }
+
+@keyframes code-cirle-animation {
+    0%   {
+        transform: scale(0.25) rotate(90deg);
+    }
+    25%  {
+        transform: scale(0.5) rotate(180deg);
+    }
+    50%  {
+        transform: scale(0.75) rotate(270deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+  }
 
 .code-part-container{
     display: flex;
@@ -52,7 +70,7 @@
 
 .code-part-container p{
     font-size: 2.8vw;
-    color: #253d2c;
+    color: var(--main-text-color);
 }
 
 .code-wrapper{
@@ -128,7 +146,7 @@
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--bg-color);
 }
 
 .tech-circle{
@@ -136,7 +154,25 @@
     align-self: center;
     align-items: center;
     justify-content: center;
+    animation-name: tech-cirle-animation;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
 }
+
+@keyframes tech-cirle-animation {
+    0%   {
+        transform: scale(0.25) rotate(90deg);
+    }
+    25%  {
+        transform: scale(0.5) rotate(180deg);
+    }
+    50%  {
+        transform: scale(0.75) rotate(270deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+  }
 
 .tech-part-container{
     display: flex;
@@ -151,7 +187,7 @@
 
 .tech-part-container p{
     font-size: 2.8vw;
-    color: #253d2c;
+    color: var(--main-text-color);
 }
 
 .tech-wrapper{
