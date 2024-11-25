@@ -1,0 +1,21 @@
+@import url('./base.css');
+
+@media only screen and (max-width: 600px) {
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.projects-container article{
+    border: solid 1px black;
+    border-radius: 15px;
+    width: 250px;
+    height: 280px;
+}
+
+}
