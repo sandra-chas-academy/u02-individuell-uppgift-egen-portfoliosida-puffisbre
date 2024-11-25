@@ -7,5 +7,6 @@
     --main-body-vh: 100vh;
     --main-body-position: relative;
     --main-font-family: "Poppins", sans-serif;
+    --main-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
   }
   

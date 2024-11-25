@@ -41,6 +41,7 @@ lampBtn.addEventListener('click', () => {
   rootVar.style.setProperty('--bg-color', 'black');
   rootVar.style.setProperty('--header-bg-color', 'black');
   rootVar.style.setProperty('--main-text-color', 'white');
+  rootVar.style.setProperty('--main-shadow', '0px 0px 5px 0px rgba(255,255,255,1)');
   lampClicked = true;
  }else if(lampClicked === true){
   turnedOn.style.display = "none";
@@ -48,6 +49,7 @@ lampBtn.addEventListener('click', () => {
   rootVar.style.setProperty('--bg-color', 'white');
   rootVar.style.setProperty('--header-bg-color', 'white');
   rootVar.style.setProperty('--main-text-color', '#253d2c');
+  rootVar.style.setProperty('--main-shadow', '0px 0px 5px 0px rgba(0,0,0,1)');
   lampClicked = false;
  }
 })
