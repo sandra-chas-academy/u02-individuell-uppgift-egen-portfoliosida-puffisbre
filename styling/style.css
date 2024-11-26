@@ -40,12 +40,13 @@ body{
     .header-container nav ul{
         display: none;
         flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+        text-align: center;
+        gap: 2rem;
         color: var(--main-text-color);
         font-size: 1em;
         margin-bottom: 10px;
         margin-top: 15%;
+        margin-left: -3.5%;
     }
 
     .header-container nav ul li a{
@@ -194,11 +195,12 @@ body{
         display: none;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
         color: var(--main-text-color);
         font-size: 1em;
         margin-bottom: 10px;
-        margin-top: 7%;
+        margin-top: 10%;
+        margin-left: -2.5%;
     }
 
     .header-container nav ul li a{
