@@ -58,14 +58,12 @@ body{
         display: flex;
         margin-right: auto;
         margin-top: 1%;
-        border-radius: 50%; 
     }
 
 
     .profile-image{
-        width: 100%;
+        width: 55px;
         height: 55px;
-        border-radius: 50%;
         filter: invert(17%) sepia(28%) saturate(627%) hue-rotate(85deg) brightness(99%) contrast(89%);
     }
      
@@ -212,14 +210,12 @@ body{
         display: flex;
         margin-right: auto;
         margin-top: 1%;
-        border-radius: 50%; 
     }
 
 
     .profile-image{
-        width: 100%;
+        width: 55px;
         height: 55px;
-        border-radius: 50%;
         filter: invert(17%) sepia(28%) saturate(627%) hue-rotate(85deg) brightness(99%) contrast(89%);
     }
      
@@ -362,14 +358,12 @@ body{
         display: flex;
         margin-right: auto;
         margin-top: 0.1%;
-        border-radius: 50%; 
     }
 
 
     .profile-image{
-        width: 100%;
+        width: 55px;
         height: 55px;
-        border-radius: 50%;
         filter: invert(17%) sepia(28%) saturate(627%) hue-rotate(85deg) brightness(99%) contrast(89%);
     }
      
