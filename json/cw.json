@@ -1,0 +1,44 @@
+[
+    {
+        "education":"Sunderby Folkhögskola",
+        "orientation": "Indiespelsutveckling",
+        "type": "School",
+        "date": "September 2017 - Juli 2019",
+        "location": "Boden"
+    },
+    {
+        "education":"Changemaker Educations",
+        "orientation": "Webutvecklare med inrikning E-handel",
+        "type": "School",
+        "date": "September 2019 - Juli 2021",
+        "location": "Boden"
+    },
+    {
+        "education":"Chas Academy",
+        "orientation": "Fullstack utvecklare JavaScript",
+        "type": "School",
+        "date": "September 2024 - Juli 2026",
+        "location": "Stockholm"
+    },
+    {
+        "company":"Stardoll",
+        "joborientation": "Indiespelsutvecklare",
+        "jobtype": "Internship",
+        "jobdate": "Januari 2019 - June 2019",
+        "joblocation": "Boden"
+    },
+    {
+        "company":"Cafiend",
+        "joborientation": "App Developer",
+        "jobtype": "Part Time",
+        "jobdate": "Autumn 2019 - Winter 2020",
+        "joblocation": "Boden"
+    },
+    {
+        "company":"EzWeb",
+        "joborientation": "Web Developer",
+        "jobtype": "Internship",
+        "jobdate": "Januari 2021 - July 2021",
+        "joblocation": "Boden"
+    }
+]

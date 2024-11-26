@@ -1,0 +1,202 @@
+@import url('./base.css');
+
+@media only screen and (max-width: 600px) {
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  textarea{
+    resize: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 5vw;
+    color: #253d2c;
+    width: 90%;
+    align-self: center;
+  }
+
+  #firstName{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 5vw;
+        color: #253d2c;
+        margin-bottom: 20px;
+        width: 90%;
+    align-self: center;
+  }
+
+  #lastName{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 5vw;
+    color: #253d2c;
+    margin-bottom: 20px;
+    width: 90%;
+    align-self: center;
+}
+
+.labelClass{
+    margin-left: 4%;
+}
+
+  .contact-container h1{
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  .input-button{
+    background-color: #253d2c;
+    color: white;
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+    align-self: center;
+    border: none;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  textarea{
+    resize: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+    color: #253d2c;
+    width: 70%;
+    align-self: center;
+  }
+
+  #firstName{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 2vw;
+        color: #253d2c;
+        margin-bottom: 20px;
+        width: 70%;
+    align-self: center;
+  }
+
+  #lastName{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+    color: #253d2c;
+    margin-bottom: 20px;
+    width: 70%;
+    align-self: center;
+}
+
+.labelClass{
+    margin-left: 15%;
+}
+
+  .contact-container h1{
+    text-align: center;
+  }
+
+  .reach-by-phone{
+    margin-top: 5%;
+  }
+
+  .phone-number{
+    margin-bottom: 5%;
+  }
+
+  .input-button{
+    background-color: #253d2c;
+    color: white;
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+    align-self: center;
+    border: none;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  textarea{
+    resize: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    color: #253d2c;
+    width: 50%;
+    align-self: center;
+  }
+
+  #firstName{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1vw;
+        color: #253d2c;
+        margin-bottom: 20px;
+        width: 50%;
+    align-self: center;
+  }
+
+  #lastName{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    color: #253d2c;
+    margin-bottom: 20px;
+    width: 50%;
+    align-self: center;
+}
+
+.labelClass{
+    margin-left: 25%;
+}
+
+  .contact-container h1{
+    text-align: center;
+  }
+
+  .reach-by-phone{
+    margin-top: 5%;
+  }
+
+  .phone-number{
+    margin-bottom: 5%;
+  }
+
+  .input-button{
+    background-color: #253d2c;
+    color: white;
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+    align-self: center;
+    border: none;
+    margin-top: 20px;
+  }
+}
