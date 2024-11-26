@@ -167,6 +167,305 @@ body{
 
 } 
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {} 
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
 
-@media only screen and (min-width: 1200px) {}
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--header-bg-color);
+        width: 100%;
+    }
+
+    .header-container h2{
+        position: absolute;
+        margin-top: 10px;
+        left: 30%;
+        text-align: center;
+    }
+
+
+    .header-container nav{
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+    }
+
+    .header-container nav ul{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        color: var(--main-text-color);
+        font-size: 1em;
+        margin-bottom: 10px;
+        margin-top: 7%;
+    }
+
+    .header-container nav ul li a{
+      text-decoration: none;
+      color: var(--main-text-color);
+    }
+
+    .profile-image-container{
+        display: flex;
+        margin-right: auto;
+        margin-top: 1%;
+        border-radius: 50%; 
+    }
+
+
+    .profile-image{
+        width: 100%;
+        height: 55px;
+        border-radius: 50%;
+        filter: invert(17%) sepia(28%) saturate(627%) hue-rotate(85deg) brightness(99%) contrast(89%);
+    }
+     
+    .lampButton{
+        position: absolute;
+        margin-top: 0.2%;
+       left: 50%;
+       transform: translate(-50%,0)
+    }
+
+    .turnedOff{
+        width: 55px;
+        height: 55px;
+    }
+
+    .turnedOn{
+        width: 55px;
+        height: 55px;
+    }
+
+    .burger-menu-container{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-left: auto;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .burger-item{
+        border: 2px solid var(--main-text-color);
+        width: 25px;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .welcome-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 10%;
+        margin-bottom: 30px;
+    }
+
+    .first-image-container{
+        position: relative;
+        text-align: center;
+        color: black;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .home-text {
+        display: flex;
+        position: relative;
+        align-self: center;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        margin-top: 2%;
+        font-size: 3.5vw;
+        color: var(--main-text-color);
+      }
+
+    .home-image{
+        width: 300px;
+        border-radius: 50%;
+    }
+    .second-image-container{
+        position: relative;
+        text-align: center;
+        color: black;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    
+
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        color: var(--main-text-color);
+        font-size: 2.5vw;
+        width: 100%;
+    }
+    .footer-container p{
+       text-align: center;
+    }
+
+    
+
+} 
+
+@media only screen and (min-width: 1200px) {
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--header-bg-color);
+        width: 100%;
+    }
+
+    .header-container h2{
+        position: absolute;
+        margin-top: 10px;
+        left: 30%;
+        text-align: center;
+    }
+
+
+    .header-container nav{
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+    }
+
+    .header-container nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        color: var(--main-text-color);
+        font-size: 1em;
+        margin-right: 5%;
+    }
+
+    .header-container nav ul li a{
+      text-decoration: none;
+      color: var(--main-text-color);
+    }
+
+    .profile-image-container{
+        display: flex;
+        margin-right: auto;
+        margin-top: 1%;
+        border-radius: 50%; 
+    }
+
+
+    .profile-image{
+        width: 100%;
+        height: 55px;
+        border-radius: 50%;
+        filter: invert(17%) sepia(28%) saturate(627%) hue-rotate(85deg) brightness(99%) contrast(89%);
+    }
+     
+    .lampButton{
+        position: absolute;
+        margin-top: 0.2%;
+       left: 98%;
+       transform: translate(-50%,0)
+    }
+
+    .turnedOff{
+        width: 55px;
+        height: 55px;
+    }
+
+    .turnedOn{
+        width: 55px;
+        height: 55px;
+    }
+
+    .burger-menu-container{
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        margin-left: auto;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .burger-item{
+        border: 2px solid var(--main-text-color);
+        width: 25px;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .welcome-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 10%;
+        margin-bottom: 30px;
+    }
+
+    .first-image-container{
+        position: relative;
+        text-align: center;
+        color: black;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .home-text {
+        display: flex;
+        position: relative;
+        align-self: center;
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+        margin-top: 2%;
+        font-size: 2.5vw;
+        color: var(--main-text-color);
+      }
+
+    .home-image{
+        width: 300px;
+        border-radius: 50%;
+    }
+    .second-image-container{
+        position: relative;
+        text-align: center;
+        color: black;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    
+
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        color: var(--main-text-color);
+        font-size: 1.5vw;
+        width: 100%;
+    }
+    .footer-container p{
+       text-align: center;
+    }
+
+    
+}

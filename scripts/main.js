@@ -59,12 +59,12 @@ burgerMenu.addEventListener('click', () =>{
     if (menuList.style.display === "none") {
         menuList.style.display = "flex";
         if(welcomeContainer != null){
-          welcomeContainer.style.marginTop = '0%';
+          //welcomeContainer.style.marginTop = '0%';
         }
       } else {
         menuList.style.display = "none";
         if(welcomeContainer != null){
-          welcomeContainer.style.marginTop = '20%';
+         // welcomeContainer.style.marginTop = '20%';
         }
       }
 });
