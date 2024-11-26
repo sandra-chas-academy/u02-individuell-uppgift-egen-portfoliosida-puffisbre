@@ -71,7 +71,7 @@ body{
     .lampButton{
         position: absolute;
         margin-top: 0.2%;
-       left: 52%;
+       left: 50%;
        transform: translate(-50%,0)
     }
 
@@ -359,7 +359,7 @@ body{
     .profile-image-container{
         display: flex;
         margin-right: auto;
-        margin-top: 1%;
+        margin-top: 0.1%;
         border-radius: 50%; 
     }
 

@@ -1,5 +1,14 @@
 @import url('./base.css');
 @media only screen and (max-width: 600px) {
+    .big-technology-title{
+        display: none;
+     }
+     .technologies-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 .tech-titles{
     text-align: center;
     font-size: 5vw;
@@ -239,4 +248,545 @@
     height: 20px;
 }
 
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+    .big-technology-title{
+        display: none;
+     }
+
+     .technologies-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tech-titles{
+        text-align: center;
+        font-size: 5vw;
+        margin-top: 5%;
+    }
+    
+    .code-circle{
+        display: flex;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        margin-top: 5%;
+        background-image: conic-gradient(
+            #ff6347 90deg,
+            #264de4 90deg 150deg,
+            #f0db4f 150deg 230deg,
+            #3c873a 230deg 270deg,
+            #59287a 270deg 300deg,
+            #7c40ff 300deg 340deg,
+            #8993be 0
+    
+        );
+        margin-bottom: 5%;
+    }
+    
+    .code-circle::before{
+        content: "";
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: var(--bg-color);
+    }
+    
+    .code-circle{
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        animation-name: code-cirle-animation;
+        animation-duration: 0.3s;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes code-cirle-animation {
+        0%   {
+            transform: scale(0.25) rotate(90deg);
+        }
+        25%  {
+            transform: scale(0.5) rotate(180deg);
+        }
+        50%  {
+            transform: scale(0.75) rotate(270deg);
+        }
+        100% {
+            transform: scale(1) rotate(360deg);
+        }
+      }
+    
+    .code-part-container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .code-part-container div{
+        padding: 0 10px;
+    }
+    
+    .code-part-container p{
+        font-size: 2.8vw;
+        color: var(--main-text-color);
+    }
+    
+    .code-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .code-wrapper p{
+        font-size: 2vw;
+    }
+    
+    .code-part1{
+        background-color: #ff6347;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .code-part2{
+        background-color: #264de4;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .code-part3{
+        background-color: #f0db4f;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .code-part4{
+        background-color: #3c873a;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .code-part5{
+        background-color: #59287a;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .code-part6{
+        background-color: #7c40ff;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .code-part7{
+        background-color: #8993be;
+        width: 5px;
+        height: 20px;
+    }
+
+
+    .tech-titles{
+        margin-top: 10%;
+        font-size: 2.5vw;
+    }
+    
+    
+    .tech-circle{
+        display: flex;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        margin-top: 5% ;
+        background-image: conic-gradient(
+            #28282B 45deg,
+            #0078d7 45deg 150deg,
+            #f34f29 150deg 230deg,
+            #382653 230deg 290deg,
+            #0096FF 290deg 320deg,
+            #cb3837 320deg 340deg,
+            #FFBF00 0
+    
+        );
+        margin-bottom: 5%;
+    }
+    
+    .tech-circle::before{
+        content: "";
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: var(--bg-color);
+    }
+    
+    .tech-circle{
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        animation-name: tech-cirle-animation;
+        animation-duration: 0.3s;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes tech-cirle-animation {
+        0%   {
+            transform: scale(0.25) rotate(90deg);
+        }
+        25%  {
+            transform: scale(0.5) rotate(180deg);
+        }
+        50%  {
+            transform: scale(0.75) rotate(270deg);
+        }
+        100% {
+            transform: scale(1) rotate(360deg);
+        }
+      }
+    
+    .tech-part-container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+    
+    .tech-part-container div{
+        padding: 0 10px;
+    }
+    
+    .tech-part-container p{
+        font-size: 2.8vw;
+        color: var(--main-text-color);
+    }
+    
+    .tech-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tech-wrapper p{
+        font-size: 2vw;
+    }
+    
+    .tech-part1{
+        background-color: #28282B;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .tech-part2{
+        background-color: #0078d7;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .tech-part3{
+        background-color:  #f34f29;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .tech-part4{
+        background-color: #382653;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .tech-part5{
+        background-color: #0096FF ;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .tech-part6{
+        background-color: #cb3837;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .tech-part7{
+        background-color: #FFBF00;
+        width: 5px;
+        height: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+
+    .big-technology-title{
+       text-align: center;
+       margin-top: 2%;
+    }
+
+    .technologies-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 2%;
+    }
+    .tech-titles{
+        text-align: center;
+        font-size: 0vw;
+        margin-top: 5%;
+    }
+    
+    .code-circle{
+        display: flex;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-top: 5%;
+        background-image: conic-gradient(
+            #ff6347 90deg,
+            #264de4 90deg 150deg,
+            #f0db4f 150deg 230deg,
+            #3c873a 230deg 270deg,
+            #59287a 270deg 300deg,
+            #7c40ff 300deg 340deg,
+            #8993be 0
+    
+        );
+        margin-bottom: 5%;
+    }
+    
+    .code-circle::before{
+        content: "";
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: var(--bg-color);
+    }
+    
+    .code-circle{
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        animation-name: code-cirle-animation;
+        animation-duration: 0.3s;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes code-cirle-animation {
+        0%   {
+            transform: scale(0.25) rotate(90deg);
+        }
+        25%  {
+            transform: scale(0.5) rotate(180deg);
+        }
+        50%  {
+            transform: scale(0.75) rotate(270deg);
+        }
+        100% {
+            transform: scale(1) rotate(360deg);
+        }
+      }
+    
+    .code-part-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .code-part-container div{
+        padding: 0 10px;
+    }
+    
+    .code-part-container p{
+        font-size: 2.8vw;
+        color: var(--main-text-color);
+    }
+    
+    .code-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .code-wrapper p{
+        font-size: 1vw;
+    }
+    
+    .code-part1{
+        background-color: #ff6347;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .code-part2{
+        background-color: #264de4;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .code-part3{
+        background-color: #f0db4f;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .code-part4{
+        background-color: #3c873a;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .code-part5{
+        background-color: #59287a;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .code-part6{
+        background-color: #7c40ff;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .code-part7{
+        background-color: #8993be;
+        width: 5px;
+        height: 20px;
+    }
+
+    
+ 
+    .tech-circle{
+        display: flex;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-top: 5% ;
+        background-image: conic-gradient(
+            #28282B 45deg,
+            #0078d7 45deg 150deg,
+            #f34f29 150deg 230deg,
+            #382653 230deg 290deg,
+            #0096FF 290deg 320deg,
+            #cb3837 320deg 340deg,
+            #FFBF00 0
+    
+        );
+        margin-bottom: 5%;
+    }
+    
+    .tech-circle::before{
+        content: "";
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: var(--bg-color);
+    }
+    
+    .tech-circle{
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        animation-name: tech-cirle-animation;
+        animation-duration: 0.3s;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes tech-cirle-animation {
+        0%   {
+            transform: scale(0.25) rotate(90deg);
+        }
+        25%  {
+            transform: scale(0.5) rotate(180deg);
+        }
+        50%  {
+            transform: scale(0.75) rotate(270deg);
+        }
+        100% {
+            transform: scale(1) rotate(360deg);
+        }
+      }
+    
+    .tech-part-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tech-part-container div{
+        padding: 0 10px;
+    }
+    
+    .tech-part-container p{
+        font-size: 2.8vw;
+        color: var(--main-text-color);
+    }
+    
+    .tech-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tech-wrapper p{
+        font-size: 1vw;
+    }
+    
+    .tech-part1{
+        background-color: #28282B;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .tech-part2{
+        background-color: #0078d7;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .tech-part3{
+        background-color:  #f34f29;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .tech-part4{
+        background-color: #382653;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .tech-part5{
+        background-color: #0096FF ;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .tech-part6{
+        background-color: #cb3837;
+        width: 5px;
+        height: 20px;
+    }
+    
+    .tech-part7{
+        background-color: #FFBF00;
+        width: 5px;
+        height: 20px;
+    }
 }
