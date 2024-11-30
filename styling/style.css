@@ -237,18 +237,54 @@ body{
     .header-container nav ul{
         display: none;
         flex-direction: column;
-        align-items: center;
+        position: absolute;
+        text-align: center;
         gap: 2rem;
-        color: var(--main-text-color);
+        color: white;
         font-size: 1em;
         margin-bottom: 10px;
-        margin-top: 10%;
-        margin-left: -2.5%;
+        margin-top: 5%;
+        z-index: 1;
+        background-color: var(--main-text-color);
+        width: 100%;
+        animation-name: menuGrowth;
+    animation-duration: 0.12s;
+    animation-timing-function: linear;
     }
+
+    @keyframes menuGrowth {
+        0%   {
+            transform: scaleY(0.25) scaleX(0.25);
+        }
+        25%  {
+            transform: scaleY(0.5) scaleX(0.5);
+        }
+        50%  {
+            transform: scaleY(0.75) scaleX(75);
+        }
+        100% {
+            transform: scaleY(1) scaleX(1);
+        }
+      }
+
+      @keyframes menuShrink {
+        0%   {
+            transform: scaleY(1) scaleX(1);
+        }
+        25%  {
+            transform: scaleY(0.75) scaleX(0.75);
+        }
+        50%  {
+            transform: scaleY(0.5) scaleX(0.5);
+        }
+        100% {
+            transform: scaleY(0) scaleX(0);
+        }
+      }
 
     .header-container nav ul li a{
       text-decoration: none;
-      color: var(--main-text-color);
+      color: white;
     }
 
     .profile-image-container{
@@ -267,8 +303,6 @@ body{
     .lampButton{
         position: absolute;
         margin-top: 0.2%;
-       left: 50%;
-       transform: translate(-50%,0)
     }
 
     .turnedOff{
@@ -293,9 +327,19 @@ body{
 
     .burger-item{
         border: 2px solid var(--main-text-color);
-        width: 25px;
+        width: 45px;
     }
 
+    .close-menu{
+        margin-left: auto;
+        overflow: hidden;
+        width: 45px;
+        height: 35px;
+        border: 12px solid #253d2c;
+        background:
+            linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#fff 45%,#fff 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+            linear-gradient(135deg, #253d2c 0%, #253d2c 43%,#fff 45%,#fff 55%,#253d2c 57%,#253d2c 100%);
+    }
     .main-container{
         display: flex;
         flex-direction: column;

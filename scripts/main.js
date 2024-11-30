@@ -20,6 +20,7 @@ turnedOn.style.display = "none";
 
 let mobileQuery = window.matchMedia("(max-width: 600px)");
 let tabletQuery = window.matchMedia("(min-width: 601px) and (max-width: 1199px)");
+let desktopQuery = window.matchMedia("(min-width: 1200px");
 
 
 lampBtn.addEventListener('click', () => {
@@ -32,6 +33,10 @@ lampBtn.addEventListener('click', () => {
   rootVar.style.setProperty('--main-shadow', '0px 0px 5px 0px rgba(255,255,255,1)');
   if(mobileQuery.matches || tabletQuery.matches){
     menuList.style.backgroundColor = ('#253d2c');
+  }
+
+  if(!mobileQuery.matches || !tabletQuery.matches){
+    rootVar.style.setProperty('--header-bg-color', 'black');
   }
   
     lampClicked = true;
@@ -53,6 +58,7 @@ lampBtn.addEventListener('click', () => {
   rootVar.style.setProperty('--header-bg-color', '#253d2c');
  }
 })
+
 
 
 burgerMenu.addEventListener('click', () =>{
