@@ -54,8 +54,8 @@ secondProject.addEventListener('click', () => {
     })
     theModal.style.display = 'block';
     modalImage.src = '../img/pigGame.png';
-modalTitle.innerHTML = "Pig Game!";
-modalText.innerHTML = "Really simple game that I made as a school assignment. We got the html and css and I just added JS";
+modalTitle.innerHTML = `Name: ${pigGameData[0].name}`;
+modalText.innerHTML = `Description: ${pigGameData[0].description}`;
 modalLink.href = pigGameData[0].html_url;
 });
 
@@ -65,8 +65,8 @@ thirdProject.addEventListener('click', () => {
     })
     theModal.style.display = 'block';
     modalImage.src = '../img/twitterClone.png';
-    modalTitle.innerHTML = "Twitter Clone!";
-    modalText.innerHTML = 'Twitter "Clone" that I made to learn CRUD projects. As in this project you can CRUD tweets!';
+    modalTitle.innerHTML = `Name: ${twitterCloneData[0].name}`;
+    modalText.innerHTML = `Description: ${twitterCloneData[0].description}`;
     modalLink.href = twitterCloneData[0].html_url;
 });
 
@@ -76,8 +76,8 @@ fourthProject.addEventListener('click', () => {
     })
     theModal.style.display = 'block';
     modalImage.src = '../img/quizApp.png';
-    modalTitle.innerHTML = "Quiz App!";
-    modalText.innerHTML = 'Quiz App we made as a group project, imported questions and answers from JSON file. With different catagories';
+    modalTitle.innerHTML = `Name: ${quizAppData[0].name}`;
+    modalText.innerHTML = `Description: ${quizAppData[0].description}`;
     modalLink.href = quizAppData[0].html_url;
 });
 
