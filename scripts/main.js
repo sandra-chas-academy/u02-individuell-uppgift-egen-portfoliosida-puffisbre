@@ -28,7 +28,7 @@ lampBtn.addEventListener('click', () => {
   rootVar.style.setProperty('--main-text-color', 'white');
   rootVar.style.setProperty('--main-shadow', '0px 0px 5px 0px rgba(255,255,255,1)');
   menuList.style.backgroundColor = ('#253d2c');
-  lampClicked = true;
+    lampClicked = true;
  }else if(lampClicked === true){
   turnedOn.style.display = "none";
   turnedOff.style.display = "block";
@@ -46,12 +46,14 @@ burgerMenu.addEventListener('click', () =>{
         menuList.style.display = "flex";
         menuList.style.animationName = 'menuGrowth';
         burgerMenu.className = 'close-menu';
+        headerContainer.style.backgroundColor = ("#253d2c");
         burgerItem.forEach(item => {
           item.style.display = "none";
         })
        menuShow = true;
       } else if(menuShow === true) {
         const closeMenu = document.querySelector('.close-menu');
+        headerContainer.style.backgroundColor = ("white");
         closeMenu.className = 'burger-menu-container'
     menuList.style.animationName = 'menuShrink';
     burgerItem.forEach(item => {
