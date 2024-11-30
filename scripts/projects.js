@@ -28,7 +28,6 @@ async function getGitApi() {
       console.error(error.message);
     }
   }
-  
   projectsParentContainer.style.display = "none";
   getGitApi();
   setTimeout(() => {

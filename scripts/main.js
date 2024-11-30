@@ -18,6 +18,9 @@ let lampClicked = false;
 let menuShow = false;
 turnedOn.style.display = "none";
 
+let mobileQuery = window.matchMedia("(max-width: 600px)");
+let tabletQuery = window.matchMedia("(min-width: 601px) and (max-width: 1199px)");
+
 
 lampBtn.addEventListener('click', () => {
  if(lampClicked === false){
@@ -27,7 +30,10 @@ lampBtn.addEventListener('click', () => {
   rootVar.style.setProperty('--header-bg-color', 'black');
   rootVar.style.setProperty('--main-text-color', 'white');
   rootVar.style.setProperty('--main-shadow', '0px 0px 5px 0px rgba(255,255,255,1)');
-  menuList.style.backgroundColor = ('#253d2c');
+  if(mobileQuery.matches || tabletQuery.matches){
+    menuList.style.backgroundColor = ('#253d2c');
+  }
+  
     lampClicked = true;
  }else if(lampClicked === true){
   turnedOn.style.display = "none";
@@ -38,6 +44,14 @@ lampBtn.addEventListener('click', () => {
   rootVar.style.setProperty('--main-shadow', '0px 0px 5px 0px rgba(0,0,0,1)');
   lampClicked = false;
  }
+
+ if(lampClicked === true && menuShow === true){
+  rootVar.style.setProperty('--header-bg-color', '#253d2c');
+ }
+
+ if(lampClicked != true && menuShow === true){
+  rootVar.style.setProperty('--header-bg-color', '#253d2c');
+ }
 })
 
 
@@ -46,20 +60,21 @@ burgerMenu.addEventListener('click', () =>{
         menuList.style.display = "flex";
         menuList.style.animationName = 'menuGrowth';
         burgerMenu.className = 'close-menu';
-        headerContainer.style.backgroundColor = ("#253d2c");
+        rootVar.style.setProperty('--header-bg-color', '#253d2c');
         burgerItem.forEach(item => {
           item.style.display = "none";
         })
        menuShow = true;
       } else if(menuShow === true) {
         const closeMenu = document.querySelector('.close-menu');
-        if(lampClicked != true){
-        headerContainer.style.backgroundColor = ("white");
-        }else if (lampClicked === true){
-          headerContainer.style.backgroundColor = ("black");
-        }
         closeMenu.className = 'burger-menu-container';
     menuList.style.animationName = 'menuShrink';
+     if(lampClicked != true){
+      rootVar.style.setProperty('--header-bg-color', 'white');
+     }else if (lampClicked === true){
+      rootVar.style.setProperty('--header-bg-color', 'black');
+     }
+
     burgerItem.forEach(item => {
       item.style.display = "block";
     })

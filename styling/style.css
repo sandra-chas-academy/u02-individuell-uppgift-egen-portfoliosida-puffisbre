@@ -40,7 +40,7 @@ body{
     .header-container nav ul{
         display: none;
         flex-direction: column;
-        position: absolute;
+        position: relative;
         text-align: right;
         gap: 2rem;
         color: white;
@@ -88,7 +88,6 @@ body{
     .header-container nav ul li a{
       text-decoration: none;
       color: white;
-      margin-right: 2%;
     }
 
     .profile-image-container{
@@ -131,13 +130,13 @@ body{
 
     .burger-item{
         border: 2px solid var(--main-text-color);
-        width: 25px;
+        width: 45px;
     }
 
     .close-menu{
         margin-left: auto;
         overflow: hidden;
-        width: 35px;
+        width: 45px;
         height: 35px;
         border: 12px solid #253d2c;
         background:
