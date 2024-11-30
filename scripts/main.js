@@ -53,8 +53,12 @@ burgerMenu.addEventListener('click', () =>{
        menuShow = true;
       } else if(menuShow === true) {
         const closeMenu = document.querySelector('.close-menu');
+        if(lampClicked != true){
         headerContainer.style.backgroundColor = ("white");
-        closeMenu.className = 'burger-menu-container'
+        }else if (lampClicked === true){
+          headerContainer.style.backgroundColor = ("black");
+        }
+        closeMenu.className = 'burger-menu-container';
     menuList.style.animationName = 'menuShrink';
     burgerItem.forEach(item => {
       item.style.display = "block";
