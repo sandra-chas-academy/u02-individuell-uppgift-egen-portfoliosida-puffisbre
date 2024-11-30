@@ -1,6 +1,25 @@
 @import url('./base.css');
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 @media only screen and (max-width: 600px) {
+
+    .close-modal{
+        position: absolute;
+        left: 90%;
+        top: 1%;
+        margin-left: auto;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border: 7px solid var(--main-text-color);
+        background:
+            linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#fff 45%,#fff 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+            linear-gradient(135deg, var(--main-text-color) 0%,var(--main-text-color) 43%,#fff 45%,#fff 55%,var(--main-text-color) 57%,var(--main-text-color) 100%);
+    }
 
     .projects-parent-container{
         display: flex;
@@ -84,10 +103,11 @@
     border-radius: 15px;
     background-color: #fefefe;
   margin: 15% auto;
-  padding: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
   border: 1px solid #888;
   width: 80%; 
-  height: 500px;
+  height: 300px;
   text-align: center;
   color: #253d2c;
   display: flex;
@@ -115,6 +135,20 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1199px) {
+
+    .close-modal{
+        position: absolute;
+        left: 94%;
+        top: 1%;
+        margin-left: auto;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 7px solid var(--main-text-color);
+        background:
+            linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#fff 45%,#fff 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+            linear-gradient(135deg, var(--main-text-color) 0%,var(--main-text-color) 43%,#fff 45%,#fff 55%,var(--main-text-color) 57%,var(--main-text-color) 100%);
+    }
     
     .projects-parent-container{
         display: flex;
@@ -249,6 +283,20 @@
 }
 
 @media only screen and (min-width: 1200px) {
+    .close-modal{
+        position: absolute;
+        left: 96.5%;
+        top: 1%;
+        margin-left: auto;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 7px solid var(--main-text-color);
+        background:
+            linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#fff 45%,#fff 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+            linear-gradient(135deg, var(--main-text-color) 0%,var(--main-text-color) 43%,#fff 45%,#fff 55%,var(--main-text-color) 57%,var(--main-text-color) 100%);
+    }
+
     .projects-parent-container{
         display: flex;
         flex-direction: column;

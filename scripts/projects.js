@@ -7,6 +7,11 @@ const modalImage = document.querySelector('.projects-modal-image');
 const modalTitle = document.querySelector('.projects-modal-title');
 const modalText = document.querySelector('.projects-modal-text');
 const modalLink = document.querySelector('.projects-modal-link');
+const closeModal = document.querySelector('.close-modal');
+
+closeModal.addEventListener('click', () => {
+    theModal.style.display = "none";
+})
 
 firstProject.addEventListener('click', () => {
 theModal.style.display = 'block';

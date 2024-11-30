@@ -15,6 +15,7 @@ const rootVar = document.querySelector(':root');
 
 let treeClicked = false;
 let lampClicked = false;
+let menuShow = false;
 turnedOn.style.display = "none";
 
 profileImageContainer.addEventListener('click', () =>{
@@ -56,16 +57,12 @@ lampBtn.addEventListener('click', () => {
 
 
 burgerMenu.addEventListener('click', () =>{
-    if (menuList.style.display === "none") {
+    if (menuShow === false) {
         menuList.style.display = "flex";
-        if(welcomeContainer != null){
-          //welcomeContainer.style.marginTop = '0%';
-        }
-      } else {
+       menuShow = true;
+      } else if(menuShow === true) {
         menuList.style.display = "none";
-        if(welcomeContainer != null){
-         // welcomeContainer.style.marginTop = '20%';
-        }
+        menuShow = false;
       }
 });
 
