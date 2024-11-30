@@ -1,4 +1,5 @@
 const burgerMenu = document.querySelector('.burger-menu-container');
+const burgerItem = document.querySelectorAll('.burger-item');
 const menuList = document.querySelector('.menu-list');
 const homeImage = document.querySelector('.home-image');
 const aboutImage = document.querySelector('.about-image');
@@ -59,9 +60,22 @@ lampBtn.addEventListener('click', () => {
 burgerMenu.addEventListener('click', () =>{
     if (menuShow === false) {
         menuList.style.display = "flex";
+        menuList.style.animationName = 'menuGrowth';
+        burgerMenu.className = 'close-menu';
+        burgerItem.forEach(item => {
+          item.style.display = "none";
+        })
        menuShow = true;
       } else if(menuShow === true) {
-        menuList.style.display = "none";
+        const closeMenu = document.querySelector('.close-menu');
+        closeMenu.className = 'burger-menu-container'
+    menuList.style.animationName = 'menuShrink';
+    burgerItem.forEach(item => {
+      item.style.display = "block";
+    })
+    setTimeout(() => {
+      menuList.style.display = "none";
+    }, 100);
         menuShow = false;
       }
 });
