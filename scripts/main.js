@@ -6,7 +6,6 @@ const aboutImage = document.querySelector('.about-image');
 const homeText = document.querySelector('.home-text');
 const aboutText = document.querySelector('.about-text');
 const welcomeContainer = document.querySelector('.welcome-container');
-const profileImageContainer = document.querySelector('.profile-image-container');
 const profileImage = document.querySelector('.profile-image');
 const headerContainer = document.querySelector('.header-container');
 const lampBtn = document.querySelector('.lampButton');
@@ -19,22 +18,6 @@ let lampClicked = false;
 let menuShow = false;
 turnedOn.style.display = "none";
 
-profileImageContainer.addEventListener('click', () =>{
- if(treeClicked === false){
-  profileImage.style.filter = 'invert(17%) sepia(28%) saturate(627%) hue-rotate(85deg) brightness(99%) contrast(89%))';
-  setTimeout(() => {
-    profileImageContainer.style.transform = 'scale(1)';
-  }, 100);
-  treeClicked = true;
- }else if(treeClicked === true){
-  profileImageContainer.style.transform = 'scale(0.5)';
-  setTimeout(() => {
-    profileImageContainer.style.transform = 'scale(1)';
-  }, 100);
-  profileImage.style.filter = 'invert(17%) sepia(28%) saturate(627%) hue-rotate(85deg) brightness(99%) contrast(89%)';
-  treeClicked = false;
- }
-})
 
 lampBtn.addEventListener('click', () => {
  if(lampClicked === false){
@@ -44,6 +27,7 @@ lampBtn.addEventListener('click', () => {
   rootVar.style.setProperty('--header-bg-color', 'black');
   rootVar.style.setProperty('--main-text-color', 'white');
   rootVar.style.setProperty('--main-shadow', '0px 0px 5px 0px rgba(255,255,255,1)');
+  menuList.style.backgroundColor = ('#253d2c');
   lampClicked = true;
  }else if(lampClicked === true){
   turnedOn.style.display = "none";
