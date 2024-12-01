@@ -1,3 +1,10 @@
+av: Felix Olsson Stenersjö
+
+länk: https://u02felixportfolio.netlify.app/
+
+
+
+
 ### Du sammanfattar ditt projekt i README.md och reflekterar kring styrkor och ev brister. Max 500 ord.
 
 Har utgått från Pavans design, men skapat en ny sida från grunden. Inte jättemycket nytt design mässigt då det inte är min starka sida.
