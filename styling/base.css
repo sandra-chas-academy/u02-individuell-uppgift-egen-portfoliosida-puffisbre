@@ -1,0 +1,12 @@
+:root {
+    --standard-margin: 0;
+    --standard-padding: 0;
+    --bg-color: white;
+    --header-bg-color: white;
+    --main-text-color: #253d2c;
+    --main-body-vh: 100vh;
+    --main-body-position: relative;
+    --main-font-family: "Poppins", sans-serif;
+    --main-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+  }
+  
