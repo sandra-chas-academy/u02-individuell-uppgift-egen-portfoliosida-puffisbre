@@ -31,13 +31,7 @@ lampBtn.addEventListener('click', () => {
   rootVar.style.setProperty('--header-bg-color', 'black');
   rootVar.style.setProperty('--main-text-color', 'white');
   rootVar.style.setProperty('--main-shadow', '0px 0px 5px 0px rgba(255,255,255,1)');
-  if(mobileQuery.matches || tabletQuery.matches){
-    menuList.style.backgroundColor = ('#253d2c');
-  }
 
-  if(!mobileQuery.matches || !tabletQuery.matches){
-    rootVar.style.setProperty('--header-bg-color', 'black');
-  }
   
     lampClicked = true;
  }else if(lampClicked === true){
@@ -49,15 +43,7 @@ lampBtn.addEventListener('click', () => {
   rootVar.style.setProperty('--main-shadow', '0px 0px 5px 0px rgba(0,0,0,1)');
   lampClicked = false;
  }
-
- if(lampClicked === true && menuShow === true){
-  rootVar.style.setProperty('--header-bg-color', '#253d2c');
- }
-
- if(lampClicked != true && menuShow === true){
-  rootVar.style.setProperty('--header-bg-color', '#253d2c');
- }
-})
+});
 
 
 
@@ -66,7 +52,6 @@ burgerMenu.addEventListener('click', () =>{
         menuList.style.display = "flex";
         menuList.style.animationName = 'menuGrowth';
         burgerMenu.className = 'close-menu';
-        rootVar.style.setProperty('--header-bg-color', '#253d2c');
         burgerItem.forEach(item => {
           item.style.display = "none";
         })
